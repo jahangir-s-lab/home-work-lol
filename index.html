@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let num1 = 9;
+let num2 = 6;
+let sum = 0;
+let difference = 0;
+let multiply1 = 0;
+let quotient1 = 0;
+
+
+function plus() {
+    sum = num1 + num2;
+    document.getElementById("result").innerHTML = "the sum is: " + sum;
+};
+
+function minus() {
+    difference = num1 - num2;
+    document.getElementById("result").innerHTML = "the difference is: " + difference;
+};
+
+function multiply() {
+    multiply1 = num1 * num2;
+    document.getElementById("result").innerHTML = "the multiply is: " + multiply1;
+};
+
+function quotient() {
+    quotient1 = num1 / num2;
+    document.getElementById("result").innerHTML = "the quotient is: " + quotient1;
+};
+    </script>
+</head>
+<body>
+    
+    <h1><strong>num1 = 9 num2 = 6</strong></h1>
+
+    <h3 id="result">_</h3>
+    
+    <button onclick="plus()" >+</button>
+    <button onclick="minus()" >-</button>
+    <button onclick="multiply()" >*</button>
+    <button onclick="quotient()" >;</button>
+
+</body>
+</html>
